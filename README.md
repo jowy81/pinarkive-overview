@@ -1,5 +1,8 @@
 # PinArkive
 
+![Flagship](https://img.shields.io/badge/Flagship-Distributed%20Platform-111111?style=for-the-badge)
+![Status](https://img.shields.io/badge/Status-Private%20Internal%20Platform-blue?style=for-the-badge)
+
 Distributed **IPFS-oriented storage and pinning platform** built around **IPFS clusters** (coordinated pinning and storage—not a single ad-hoc daemon). Users interact through a web application and APIs; **IPFS Cluster** and **IPFS (Kubo)** nodes provide storage and coordination. A **Node.js backend** fronts MongoDB and cluster APIs; supporting repos cover infrastructure, SDKs, CLI, examples, and public starter templates.
 
 Built and maintained as part of real-world infrastructure and production environments.
@@ -37,6 +40,12 @@ Teams need **reliable pinned IPFS content** with a real control plane—not only
 - **Storage / orchestration** — IPFS Cluster for coordination; Kubo nodes; dedicated infra repos for cluster topology and node deployment.
 - **Access layer** — SDKs (TypeScript published packages and others), CLI, example applications, and landing/documentation sites (content is private unless published separately).
 - **Automation / jobs** — Background workers for notifications and housekeeping (exact deployment topology is environment-specific and private).
+
+## Architecture Diagram
+
+Control and storage layers (conceptual; not production topology).
+
+![Architecture Diagram](./assets/architecture.svg)
 
 ## Tech Stack
 
